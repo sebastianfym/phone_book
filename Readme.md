@@ -62,8 +62,8 @@ http://127.0.0.1:8000/redoc/
     {
     "first_name": "Игорь",
     "last_name": "Харченко",
-    "email": "ighmail.ru",
-    "phone": "+330003234"
+    "email": "igh@mail.ru",
+    "phone": "+7330003234"
     }
 
 -http://127.0.0.1:8000/phonebook/contact/1/ --- получение контакта по id
@@ -75,8 +75,8 @@ http://127.0.0.1:8000/phonebook/contact/1/ --- изменение конкрет
     {
     "first_name": "Игорь",
     "last_name": "Харченко",
-    "email": "ighmail.ru",
-    "phone": "+330003234"
+    "email": "igh@mail.ru",
+    "phone": "+7330003234"
     }
 
 -http://127.0.0.1:8000/phonebook/contact/1/ --- удаление контакта по id
