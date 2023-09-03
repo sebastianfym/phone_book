@@ -5,7 +5,6 @@ from .models import Contact
 
 
 class ContactSerializer(ModelSerializer):
-    # user = serializers.ReadOnlyField()
 
     class Meta:
         model = Contact
