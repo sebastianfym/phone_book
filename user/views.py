@@ -20,8 +20,6 @@ class Authentication(GenericViewSet):
         password = request.data.get("password")
 
         try:
-            # user = User.objects.get(email=email)
-            # if user.check_password(password):
             user = User.objects.get(email=email, password=password)
             user_data = self.get_serializer(user).data
             token = get_access_token(user, request)
@@ -68,7 +66,6 @@ class Authentication(GenericViewSet):
     @action(methods=["POST"], detail=False, url_path='logout')
     def logout(self, request):
         try:
-            # token = get_access_token(request.user, request)
             return Response({"detail": "Вы разлогинились."}, status=status.HTTP_200_OK)
         except Exception as e:
             return Response({"error": f"Произошла ошибка: {e}."},
